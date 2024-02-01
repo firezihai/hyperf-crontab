@@ -12,9 +12,8 @@ declare(strict_types=1);
 
 namespace Firezihai\Crontab;
 
-use Hyperf\Crontab\Crontab;
 
-class Crontab extends Crontab
+class Crontab extends \Hyperf\Crontab\Crontab
 {
     /**
      * 失败策略.

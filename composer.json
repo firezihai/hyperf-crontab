@@ -19,10 +19,10 @@
     },
     "require": {
         "php": ">=8.0",
-        "hyperf/crontab": "^3.0",
-		"hyperf/process": "^2.2",
-    },
-    "require-dev": {
+        "hyperf/crontab": "~3.0",
+		"hyperf/process": "~3.0.0"
+	},
+	"require-dev": {
         "friendsofphp/php-cs-fixer": "^3.0",
         "mockery/mockery": "^1.0",
         "phpstan/phpstan": "^1.0",
