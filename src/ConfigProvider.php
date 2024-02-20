@@ -17,7 +17,7 @@ class ConfigProvider
                 [
                     'id' => 'config',
                     'description' => 'The config for crontab.',
-                    'source' => __DIR__ . '/../publish/hyperf_crontab.php',
+                    'source' => __DIR__ . '/../publish/diy_crontab.php',
                     'destination' => BASE_PATH . '/config/autoload/diy_crontab.php',
                 ],
             ],
