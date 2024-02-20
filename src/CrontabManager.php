@@ -1,14 +1,6 @@
 <?php
 
 declare(strict_types=1);
-/**
- * This file is part of Hyperf.
- *
- * @link     https://www.hyperf.io
- * @document https://hyperf.wiki
- * @contact  group@hyperf.io
- * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
- */
 
 namespace Firezihai\Crontab;
 
@@ -44,7 +36,7 @@ class CrontabManager
 
     public function getCrontabList(): array
     {
-        $driverClass = $this->config->get('yqp_crontab.driver.class');
+        $driverClass = $this->config->get('diy_crontab.driver.class');
 
         $driver = make($driverClass);
         if (! $driver instanceof CrontabDataInterface) {

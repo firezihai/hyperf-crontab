@@ -1,14 +1,6 @@
 <?php
 
 declare(strict_types=1);
-/**
- * This file is part of Hyperf.
- *
- * @link     https://www.hyperf.io
- * @document https://hyperf.wiki
- * @contact  group@hyperf.io
- * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
- */
 
 namespace Firezihai\Crontab;
 
@@ -28,7 +20,7 @@ use Swoole\Server;
 
 class CrontabProcess extends AbstractProcess
 {
-    public string $name = 'Hyperf Crontab';
+    public string $name = 'Hyperf Diy Crontab';
 
     private ConfigInterface $config;
 
@@ -77,7 +69,7 @@ class CrontabProcess extends AbstractProcess
      */
     public function isEnable($server): bool
     {
-        return (bool) $this->config->get('yqp_crontab.enable', false);
+        return (bool) $this->config->get('diy_crontab.enable', false);
     }
 
     /**

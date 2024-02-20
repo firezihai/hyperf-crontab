@@ -43,9 +43,9 @@
         "analyse": "phpstan analyse --memory-limit 1024M -l 0 ./src",
         "cs-fix": "php-cs-fixer fix $1"
     },
-    "extra": {
-        "hyperf": {
-            "config": "Yqp\\Crontab\\ConfigProvider"
-        }
-    }
+	"extra" : {
+		"hyperf" : {
+			"config" : "Firezihai\\Crontab\\ConfigProvider"
+		}
+	}
 }
